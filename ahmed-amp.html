@@ -88,8 +88,16 @@ a:hover {color:#ff5500}
 </head>
 <body>
 
-<div id="related-post" class="related-post" />
-<script>
+<div id="related-post" class="related-post">
+<ul class="related-post-style-2" style="height: 306px; overflow: hidden;">
+<li style="height: 82px; overflow: hidden; opacity: 1; display: list-item; padding-bottom: 10px;">
+<a expr:href='data:post.url' expr:alt='data:post.title' target="_blank">
+<img alt="" class="related-post-item-thumbnail" expr:src='data:post.firstImageUrl' width="200" height="200">
+</li>
+</ul>
+</a>
+</div>
+	<script>
 function getQueryVariable(variable) {
   var query = window.location.search.substring(1);
   var vars = query.split("&");
